@@ -3,6 +3,12 @@ languageCode = "en-us"
 title = "Lxya Blog"
 theme = "PaperMod"
 
+[pagination]
+pagerSize = 5
+
 [params]
 author = "Lxya"
-description = "AI and Tech Blog"
+description = "AI and Technology Blog"
+
+relativeURLs = true
+canonifyURLs = true
