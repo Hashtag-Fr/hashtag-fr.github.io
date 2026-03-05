@@ -1,0 +1,8 @@
+baseURL = "https://lxya.github.io/"
+languageCode = "en-us"
+title = "AI Trend Blog"
+theme = "PaperMod"
+
+[params]
+author = "Lxya"
+description = "AI and Technology Trends Blog"
