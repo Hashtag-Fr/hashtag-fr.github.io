@@ -3,17 +3,81 @@ languageCode = "en-us"
 title = "Lxya Blog"
 theme = "PaperMod"
 enableRobotsTXT = true
+enableEmoji = true
+
+# SEO-friendly URL structure
+[permalinks]
+  posts = "/blog/:slug/"
 
 [pagination]
 pagerSize = 10
 
+# Minify HTML for better performance
+[minify]
+  disableHTML = false
+  disableJSON = false
+  disableJS = false
+
 [params]
 author = "Lxya"
-description = "AI tools, coding and technology blog"
+description = "AI tools, coding and technology blog - Your go-to resource for artificial intelligence, productivity tools, and cutting-edge technology insights"
+keywords = ["AI", "artificial intelligence", "technology", "productivity", "coding", "blog"]
 
+# SEO Settings
 relativeURLs = true
 canonifyURLs = true
 
+# Homepage Settings - Clear purpose and eye-catching
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+ShowCodeCopyButtons = true
+ShowReadingTime = true
+ShowShareButtons = true  # Social sharing buttons
+ShowToc = true  # Table of Contents
+TocOpen = false  # ToC collapsed by default
+
+# Design Best Practices - Clean and professional
+disableThemeToggle = false
+defaultTheme = "light"
+ShowFullTextinRSS = true
+
+# Homepage Info Section
+homeInfoParams.Title = "Welcome to Lxya Blog"
+homeInfoParams.Content = """
+Your trusted source for AI tools, technology insights, and productivity tips. 
+Discover practical guides, in-depth reviews, and expert advice to stay ahead in the digital age.
+"""
+
+# Profile Mode (Alternative: can be enabled for more visual homepage)
+profileMode.enabled = false
+
+# Social Media Links (for sharing and footer)
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/"
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+# Image Optimization Settings
+[params.cover]
+linkFullImages = true
+responsiveImages = true
+
+# SEO and Analytics
+[params.analytics]
+google_analytics_id = "" # Add your GA4 ID here
+
+# Navigation Menu - Simple and reader-centric
 [menu]
 
 [[menu.main]]
@@ -22,6 +86,42 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Posts"
+name = "Blog"
 url = "/posts/"
 weight = 2
+
+[[menu.main]]
+name = "About Me"
+url = "/about/"
+weight = 3
+
+[[menu.main]]
+name = "Search"
+url = "/search/"
+weight = 4
+
+# Taxonomies for better SEO
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# Output formats for search functionality
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# Markup settings for proper heading hierarchy
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    lineNos = true
+    noClasses = false
+    style = "monokai"
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

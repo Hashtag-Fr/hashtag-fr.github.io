@@ -1,0 +1,308 @@
+/* Custom CSS for Professional Blog Design
+   Following best practices: Strategic whitespace, limited fonts, clean color palette */
+
+:root {
+    /* Color Palette - 2-3 complementary colors */
+    --primary-color: #2563eb;      /* Professional blue */
+    --secondary-color: #1e40af;    /* Darker blue for accents */
+    --text-color: #1f2937;         /* Dark gray for body text */
+    --light-bg: #f9fafb;           /* Light background */
+    --white: #ffffff;
+    
+    /* Typography - Maximum 2-3 fonts */
+    --heading-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --body-font: 'Georgia', 'Cambria', 'Times New Roman', serif;
+    --mono-font: 'Consolas', 'Monaco', 'Courier New', monospace;
+    
+    /* Strategic Whitespace */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+}
+
+/* Typography Optimization */
+body {
+    font-family: var(--body-font);
+    line-height: 1.75;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--light-bg);
+    padding-bottom: var(--spacing-sm);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Paragraph Formatting - Short, bite-sized blocks */
+.post-content p {
+    max-width: 70ch; /* Optimal reading width */
+    margin-bottom: var(--spacing-md);
+    font-size: 1.125rem;
+}
+
+/* Strategic Whitespace Around Content */
+.main {
+    padding: var(--spacing-lg) var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.post-entry {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Thumbnail Grid - Clean Display */
+.post-entry .entry-cover {
+    margin-bottom: var(--spacing-md);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-entry .entry-cover img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+/* Image Optimization for SEO */
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: var(--spacing-md) 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure images don't require horizontal scrolling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Table of Contents Styling */
+.toc {
+    background: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--primary-color);
+}
+
+.toc details summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    padding: var(--spacing-sm);
+}
+
+/* Header and Navigation - Professional Branding */
+.header {
+    padding: var(--spacing-md) 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.nav {
+    display: flex;
+    gap: var(--spacing-md);
+    font-family: var(--heading-font);
+}
+
+.nav a {
+    padding: var(--spacing-sm) var(--spacing-md);
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Social Share Buttons */
+.share-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--light-bg);
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.share-buttons a {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    transition: background 0.2s;
+}
+
+.share-buttons a:hover {
+    background: var(--secondary-color);
+}
+
+/* Email Subscription Form */
+.email-subscribe {
+    max-width: 600px;
+    margin: var(--spacing-xl) auto;
+    padding: var(--spacing-lg);
+    background: var(--light-bg);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.email-subscribe h3 {
+    margin-top: 0;
+    font-family: var(--heading-font);
+}
+
+.email-subscribe input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: var(--spacing-sm) 0;
+}
+
+.email-subscribe button {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--heading-font);
+    transition: background 0.2s;
+}
+
+.email-subscribe button:hover {
+    background: var(--secondary-color);
+}
+
+/* Related Posts Section */
+.related-posts {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: var(--light-bg);
+    border-radius: 8px;
+}
+
+.related-posts h3 {
+    margin-top: 0;
+    font-family: var(--heading-font);
+}
+
+.related-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-posts li {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.related-posts li:last-child {
+    border-bottom: none;
+}
+
+.related-posts a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.related-posts a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .post-content p {
+        font-size: 1rem;
+    }
+    
+    .main {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+}
+
+/* Code blocks */
+code {
+    font-family: var(--mono-font);
+    background: var(--light-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+pre {
+    margin: var(--spacing-md) 0;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* Accessibility and Performance */
+a {
+    color: var(--primary-color);
+}
+
+a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Lists - Better spacing */
+ul, ol {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+li {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Blockquotes */
+blockquote {
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-left: 4px solid var(--primary-color);
+    background: var(--light-bg);
+    font-style: italic;
+}
