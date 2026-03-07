@@ -4,6 +4,7 @@ date = "2026-03-02"
 draft = false
 description = "Discover proven ways to earn money using AI tools - from freelancing to building SaaS products. Real strategies that work."
 tags = ["AI tools", "make money", "freelancing", "side hustle", "entrepreneurship"]
+categories = ["Make Money"]
 author = "Lxya"
 
 # SEO Settings

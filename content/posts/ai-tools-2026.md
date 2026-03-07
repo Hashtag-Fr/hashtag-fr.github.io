@@ -4,6 +4,7 @@ date = "2026-03-05"
 draft = false
 description = "Discover the best AI tools transforming everyday productivity and creativity."
 tags = ["AI tools","productivity","technology","artificial intelligence"]
+categories = ["AI Tools"]
 author = "Lxya"
 
 # SEO Settings

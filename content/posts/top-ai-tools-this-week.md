@@ -4,6 +4,7 @@ date = "2026-03-06"
 draft = false
 description = "Weekly roundup of the hottest new AI tools, updates, and releases. Stay ahead with the latest in artificial intelligence."
 tags = ["AI tools", "tech news", "weekly roundup", "artificial intelligence", "technology"]
+categories = ["Tech News"]
 author = "Lxya"
 
 # SEO Settings

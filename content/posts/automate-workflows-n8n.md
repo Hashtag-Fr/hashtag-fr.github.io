@@ -4,6 +4,7 @@ date = "2026-03-04"
 draft = false
 description = "Learn how to build powerful automation workflows with n8n - the free, open-source alternative to Zapier and Make."
 tags = ["automation", "n8n", "productivity", "AI tools", "workflows"]
+categories = ["Automation"]
 author = "Lxya"
 
 # SEO Settings

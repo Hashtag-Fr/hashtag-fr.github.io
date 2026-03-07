@@ -27,6 +27,16 @@ keywords = ["AI", "artificial intelligence", "technology", "productivity", "codi
 relativeURLs = true
 canonifyURLs = true
 
+# Open Graph and Twitter Card support
+[params.og]
+locale = "en_US"
+type = "website"
+
+# JSON-LD structured data
+[params.schema]
+enable = true
+type = "Blog"
+
 # Homepage Settings - Clear purpose and eye-catching
 ShowBreadCrumbs = true
 ShowPostNavLinks = true
@@ -91,8 +101,8 @@ url = "/posts/"
 weight = 2
 
 [[menu.main]]
-name = "AI Tools"
-url = "/tags/ai-tools/"
+name = "Resources"
+url = "/resources/"
 weight = 3
 
 [[menu.main]]
@@ -103,7 +113,7 @@ weight = 4
 [[menu.main]]
 name = "Search"
 url = "/search/"
-weight = 4
+weight = 5
 
 # Taxonomies for better SEO
 [taxonomies]

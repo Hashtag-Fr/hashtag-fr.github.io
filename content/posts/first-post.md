@@ -4,6 +4,8 @@ date = "2026-03-05"
 draft = false
 description = "Discover the best AI tools transforming everyday productivity and creativity."
 tags = ["AI tools", "productivity", "technology", "artificial intelligence"]
+categories = ["AI Tools"]
+author = "Lxya"
 +++
 
 Artificial intelligence is rapidly becoming part of everyday life. From writing emails to generating videos and managing schedules, AI tools help save time and improve productivity.

@@ -4,6 +4,7 @@ date = "2026-03-03"
 draft = false
 description = "Discover the top free AI tools every developer should use to code faster, debug smarter, and build better products."
 tags = ["AI tools", "coding", "developers", "productivity", "technology"]
+categories = ["Coding"]
 author = "Lxya"
 
 # SEO Settings
