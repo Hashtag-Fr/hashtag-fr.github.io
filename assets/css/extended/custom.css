@@ -1,101 +1,558 @@
-/* Custom CSS for AI With Lxya - Modern AI Blog Design
-   Following best practices: Strategic whitespace, limited fonts, clean color palette */
+/* ============================================
+   AI With Lxya - PaperMod Theme Customization
+   Fixes for all layout, spacing, and design issues
+   ============================================ */
 
 :root {
     /* AI-Style Color Palette */
-    --primary-color: #0F172A;      /* Deep navy - primary text/headers */
-    --accent-color: #6366F1;       /* Vibrant indigo - links & accents */
-    --background: #F8FAFC;         /* Light blue-gray background */
+    --primary-color: #6366F1;      /* Vibrant indigo for accents */
+    --primary-dark: #4F46E5;       /* Darker indigo for hover */
     --text-color: #1E293B;         /* Slate gray for body text */
-    --white: #ffffff;
-    --card-shadow: rgba(99, 102, 241, 0.1);
+    --heading-color: #0F172A;      /* Deep navy for headings */
+    --background: #F8FAFC;         /* Light blue-gray background */
+    --white: #FFFFFF;
+    --border: #E2E8F0;
+    --card-shadow: rgba(99, 102, 241, 0.08);
     
-    /* Typography - Maximum 2-3 fonts */
-    --heading-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --body-font: 'Georgia', 'Cambria', 'Times New Roman', serif;
-    --mono-font: 'Consolas', 'Monaco', 'Courier New', monospace;
+    /* Typography */
+    --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+    --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
     
     /* Strategic Whitespace */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 3rem;
-    --spacing-xl: 4rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
 }
 
-/* Typography Optimization */
+/* ============================================
+   FIX #3 & #4: HEADER & NAVIGATION
+   ============================================ */
+
+/* Reduce header height and improve styling */
+.nav {
+    height: auto !important;
+    padding: 1rem 1.5rem !important;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+}
+
+/* Center and improve navigation menu */
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+#menu a {
+    font-size: 0.95rem !important;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    opacity: 0.8;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+#menu a:hover,
+#menu a.active {
+    opacity: 1;
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+/* Mobile menu improvements */
+@media (max-width: 768px) {
+    .nav {
+        padding: 0.75rem 1rem !important;
+    }
+    
+    #menu {
+        gap: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    #menu a {
+        padding: 0.75rem 1rem;
+        width: 100%;
+    }
+}
+
+/* ============================================
+   FIX #2 & #5: POST CARDS & BLOG LAYOUT
+   ============================================ */
+
+/* Create responsive grid layout for posts */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+/* Compact, modern post cards */
+.post-entry {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--card-shadow);
+    transition: all 0.3s ease;
+    margin-bottom: var(--spacing-lg);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.post-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+}
+
+/* Fix #1: Proper image rendering */
+.entry-cover {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    margin: 0 !important;
+    border-radius: 0px !important;
+}
+
+.entry-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.post-entry:hover .entry-cover img {
+    transform: scale(1.05);
+}
+
+/* Post card content */
+.entry-header {
+    padding: var(--spacing-md) var(--spacing-md) 0;
+}
+
+.entry-header h2 {
+    font-size: 1.35rem !important;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 var(--spacing-sm);
+    color: var(--heading-color);
+}
+
+.entry-content {
+    padding: 0 var(--spacing-md);
+    flex: 1;
+}
+
+.entry-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
+    margin: 0;
+}
+
+.entry-footer {
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md);
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* Grid layout for blog page */
+@media (min-width: 768px) {
+    .main .list:not(.post-single) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (min-width: 1024px) {
+    .main .list:not(.post-single) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* First entry special styling (homepage featured) */
+.first-entry {
+    grid-column: 1 / -1 !important;
+    display: flex;
+    flex-direction: row !important;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .first-entry .entry-cover {
+        width: 45%;
+        height: 350px;
+    }
+    
+    .first-entry .entry-header,
+    .first-entry .entry-content,
+    .first-entry .entry-footer {
+        padding-left: var(--spacing-lg);
+        padding-right: var(--spacing-lg);
+    }
+    
+    .first-entry .entry-header h2 {
+        font-size: 2rem !important;
+    }
+    
+    .first-entry .entry-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* ============================================
+   FIX #6: IMPROVED TYPOGRAPHY
+   ============================================ */
+
 body {
     font-family: var(--body-font);
-    line-height: 1.75;
+    font-size: 16px;
+    line-height: 1.7;
     color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    font-weight: 700;
-    line-height: 1.3;
-    margin-top: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
-}
-
 h1 {
-    font-size: 2.5rem;
-    margin-top: 0;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    color: var(--heading-color);
 }
 
 h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid var(--background);
-    padding-bottom: var(--spacing-sm);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--heading-color);
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
 }
 
-/* Paragraph Formatting - Short, bite-sized blocks */
-.post-content p {
-    max-width: 70ch; /* Optimal reading width */
+/* Post content typography */
+.post-content p,
+.post-single .post-content p {
+    font-size: 1.0625rem;
+    line-height: 1.75;
     margin-bottom: var(--spacing-md);
-    font-size: 1.125rem;
+    max-width: 70ch;
 }
 
-/* Strategic Whitespace Around Content */
-.main {
-    padding: var(--spacing-lg) var(--spacing-md);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.post-entry {
-    margin-bottom: var(--spacing-xl);
-    padding: var(--spacing-lg);
-    background: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Article Thumbnail Grid - Clean Display */
-.post-entry .entry-cover {
-    margin-bottom: var(--spacing-md);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.post-entry .entry-cover img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 400px;
-}
-
-/* Image Optimization for SEO */
-article img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+.post-content ul,
+.post-content ol {
     margin: var(--spacing-md) 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding-left: var(--spacing-lg);
+}
+
+.post-content li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+}
+
+/* Better contrast for dark mode */
+.dark {
+    --text-color: #E2E8F0;
+    --heading-color: #F1F5F9;
+    --border: #334155;
+    --background: #0F172A;
+}
+
+/* ============================================
+   FIX #7: RESOURCES PAGE (STRUCTURED CARDS)
+   ============================================ */
+
+/* Resources page custom styling */
+.resources-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.resources-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.resource-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+    border-color: var(--primary-color);
+}
+
+.resource-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 var(--spacing-sm);
+    color: var(--heading-color);
+}
+
+.resource-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
+    margin-bottom: var(--spacing-md);
+}
+
+.resource-card a {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.resource-card a:hover {
+    background: var(--primary-dark);
+    transform: translateX(4px);
+}
+
+/* ============================================
+   FIX #8: ABOUT PAGE IMPROVEMENTS
+   ============================================ */
+
+.about-hero {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-xl) 0;
+}
+
+.about-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-intro {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 60ch;
+    margin: 0 auto var(--spacing-2xl);
+    text-align: center;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.about-section {
+    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-xl);
+    background: var(--white);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+.about-section h2 {
+    margin-top: 0;
+}
+
+/* Section dividers */
+.section-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    margin: var(--spacing-2xl) 0;
+}
+
+/* ============================================
+   FIX #9: SEARCH PAGE IMPROVEMENTS
+   ============================================ */
+
+.search-ui {
+    max-width: 600px;
+    margin: var(--spacing-2xl) auto;
+    text-align: center;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.2);
+}
+
+#searchResults {
+    margin-top: var(--spacing-xl);
+    text-align: left;
+}
+
+/* ============================================
+   FIX #10: GENERAL DESIGN IMPROVEMENTS
+   ============================================ */
+
+/* Smooth hover animations */
+a {
+    transition: all 0.2s ease;
+}
+
+button {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Soft shadows */
+.profile,
+.entry,
+.toc,
+.page-header {
+    box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+/* Consistent spacing */
+.page-header {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+}
+
+/* Home info section */
+.home-info {
+    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+    color: white;
+    padding: var(--spacing-2xl);
+    border-radius: 16px;
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.home-info .entry-content {
+    padding: 0;
+}
+
+.home-info h1 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-2xl);
+}
+
+.pagination a {
+    padding: 0.75rem 1.5rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .main {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+    
+    .first-entry {
+        flex-direction: column !important;
+    }
+    
+    .first-entry .entry-cover {
+        width: 100% !important;
+        height: 220px !important;
+    }
+    
+    .home-info {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* ============================================
+   PERFORMANCE & ACCESSIBILITY
+   ============================================ */
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 /* Ensure images don't require horizontal scrolling */

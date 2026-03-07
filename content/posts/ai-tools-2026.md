@@ -7,12 +7,14 @@ tags = ["AI tools","productivity","technology","artificial intelligence"]
 categories = ["AI Tools"]
 author = "Lxya"
 
-# SEO Settings
+# Cover image configuration
 [cover]
-image = "/images/ai-tools-2026.jpg"  # Featured image for SEO and social sharing
+image = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&q=80"
 alt = "AI Tools for 2026 - productivity and creativity tools"
 caption = "The most impactful AI tools for daily productivity"
-relative = false
+hidden = false
+hiddenInList = false
+hiddenInSingle = false
 
 # Enable all engagement features
 ShowToc = true
