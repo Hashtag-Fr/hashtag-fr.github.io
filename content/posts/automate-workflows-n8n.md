@@ -9,7 +9,7 @@ author = "Lxya"
 
 # SEO Settings
 [cover]
-image = "/images/n8n-automation.jpg"
+image = "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&h=500&fit=crop&q=80"
 alt = "n8n workflow automation visual"
 caption = "Build powerful automations with n8n"
 relative = false

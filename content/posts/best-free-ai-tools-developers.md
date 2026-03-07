@@ -7,9 +7,9 @@ tags = ["AI tools", "coding", "developers", "productivity", "technology"]
 categories = ["Coding"]
 author = "Lxya"
 
-# SEO Settings
+# Cover Image for Blog Grid
 [cover]
-image = "/images/ai-dev-tools.jpg"
+image = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop&q=80"
 alt = "AI tools for developers"
 caption = "Essential AI tools for modern developers"
 relative = false

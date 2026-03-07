@@ -27,15 +27,26 @@ keywords = ["AI", "artificial intelligence", "technology", "productivity", "codi
 relativeURLs = true
 canonifyURLs = true
 
+# Enhanced Meta Tags
+[params.meta]
+defaultImage = "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop&q=80"
+twitterCard = "summary_large_image"
+twitterSite = "@aiwithlyxa"
+twitterCreator = "@aiwithlyxa"
+
 # Open Graph and Twitter Card support
 [params.og]
 locale = "en_US"
 type = "website"
+siteName = "AI With Lxya"
+title = "AI With Lxya - Discover Powerful AI Tools"
+description = "Explore the latest AI tools, automation workflows, and strategies to build and earn using artificial intelligence."
 
 # JSON-LD structured data
 [params.schema]
 enable = true
 type = "Blog"
+organization = "AI With Lxya"
 
 # Homepage Settings - Clear purpose and eye-catching
 ShowBreadCrumbs = true

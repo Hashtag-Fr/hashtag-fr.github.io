@@ -9,7 +9,7 @@ author = "Lxya"
 
 # SEO Settings
 [cover]
-image = "/images/ai-weekly.jpg"
+image = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop&q=80"
 alt = "Weekly AI tools roundup"
 caption = "This week's hottest AI releases"
 relative = false

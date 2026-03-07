@@ -9,7 +9,7 @@ author = "Lxya"
 
 # SEO Settings
 [cover]
-image = "/images/ai-make-money.jpg"
+image = "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=500&fit=crop&q=80"
 alt = "Making money with AI tools"
 caption = "Turn AI skills into income"
 relative = false

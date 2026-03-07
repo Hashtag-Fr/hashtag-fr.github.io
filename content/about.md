@@ -2,6 +2,7 @@
 title: "About AI With Lxya"
 date: 2026-03-06
 draft: false
+layout: "single"
 showtoc: false
 hidemeta: true
 comments: false
@@ -9,11 +10,16 @@ disableShare: true
 searchHidden: true
 ---
 
-## Welcome to AI With Lxya 👋
+<div class="about-hero">
+  <h1>About AI With Lxya</h1>
+  <p class="about-intro">Your trusted guide to discovering and mastering powerful AI tools that transform how you work, create, and build.</p>
+</div>
 
-I'm Lxya, and I created this blog to help you **discover and master powerful AI tools** that can transform your daily life and work.
+<div class="section-divider"></div>
 
-### The Mission
+<div class="about-section">
+
+## 🎯 The Mission
 
 Artificial intelligence is evolving faster than ever, with new tools launching every week. My mission is simple: **cut through the noise and show you what actually works**.
 
@@ -25,28 +31,72 @@ Whether you're looking to:
 
 ...you'll find practical, tested insights here.
 
-### What You'll Find
+</div>
 
-**Weekly AI Tool Roundups**
-Every week, I test and review the latest AI launches so you don't waste time on tools that don't deliver.
+<div class="about-section">
 
-**In-Depth Tutorials**
-Step-by-step guides on using AI for automation, content creation, coding, and more.
+## 📚 What You'll Find
 
-**Real-World Use Cases**
-Practical examples of how AI tools solve actual problems and save time.
+<div class="about-features">
 
-**Money-Making Strategies**
-Proven ways to turn AI skills into income through freelancing, SaaS, and digital products.
+### Weekly AI Tool Roundups
+Every week, I test and review the latest AI launches so you don't waste time on tools that don't deliver. Get curated recommendations based on real-world testing.
 
-### Why Trust This Blog?
+### In-Depth Tutorials
+Step-by-step guides on using AI for automation, content creation, coding, and more. Learn by doing with practical examples and code samples.
+
+### Real-World Use Cases
+Practical examples of how AI tools solve actual problems and save time. See how professionals are using AI to enhance their workflows.
+
+### Money-Making Strategies
+Proven ways to turn AI skills into income through freelancing, SaaS, and digital products. Learn from successful implementations.
+
+</div>
+
+</div>
+
+<div class="about-section">
+
+## 🔍 Why Trust This Blog?
 
 I'm not sponsored by AI companies (though I use affiliate links when recommending tools I genuinely use). Every recommendation comes from hands-on testing and real-world application.
 
-### The AI With Lxya Philosophy
+**My Promise:**
+- Honest reviews with pros and cons
+- Real testing, not just marketing hype
+- Practical advice you can implement today
+- No BS, just actionable insights
 
-**AI is a Tool, Not Magic**
+</div>
+
+<div class="about-section">
+
+## 💡 The AI With Lxya Philosophy
+
+### AI is a Tool, Not Magic
 I don't hype AI beyond what it can actually do. You'll get honest assessments of strengths and limitations.
+
+### Practical Over Theoretical
+Focus on what you can actually use today, not what might be possible in 5 years.
+
+### Learn by Building
+The best way to understand AI is to use it. Every tutorial includes hands-on examples.
+
+### Stay Curious
+Technology changes fast. I'm learning alongside you and sharing what works.
+
+</div>
+
+<div class="section-divider"></div>
+
+<div class="about-cta">
+  <h2>Ready to Get Started?</h2>
+  <p>Explore the latest articles and start discovering AI tools that will transform your workflow.</p>
+  <div class="cta-buttons">
+    <a href="/blog" class="cta-button primary">Read the Blog</a>
+    <a href="/resources" class="cta-button secondary">Browse Resources</a>
+  </div>
+</div>
 
 **Speed Meets Quality**
 AI helps us work faster, but quality still matters. I show you how to combine AI speed with human expertise.

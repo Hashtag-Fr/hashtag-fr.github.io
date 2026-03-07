@@ -2,102 +2,260 @@
 title: "AI Resources & Tools Guide"
 description: "Comprehensive guide to AI tools, platforms, and resources. Curated recommendations for productivity, coding, automation, and more."
 date: 2026-03-06
-layout: "single"
+layout: "resources"
 url: "/resources/"
 ---
 
-## AI Tools by Category
+<div class="resources-hero">
+  <h1>AI Resources & Tools Guide</h1>
+  <p class="resources-subtitle">Curated collection of the best AI tools to supercharge your productivity, creativity, and workflow</p>
+</div>
 
-### Productivity & Writing
-- **ChatGPT** - Conversational AI for writing, brainstorming, and learning
-- **Notion AI** - AI-powered knowledge management and task organization
-- **Grammarly** - Advanced writing enhancement and clarity improvement
-- **Claude** - Advanced AI assistant for complex reasoning tasks
+<div class="resources-section">
 
-### Coding & Development
-- **GitHub Copilot** - AI pair programming assistant
-- **Cursor** - AI-powered code editor based on VSCode
-- **Tabnine** - AI code completion engine
-- **Amazon CodeWhisperer** - AI code suggestions and documentation
+## 🚀 Productivity & Writing
 
-### Content Creation
-- **Midjourney** - AI image generation from text prompts
-- **Runway Gen-2** - AI video generation and editing
-- **Adobe Firefly** - Generative AI for creative professionals
-- **Synthesia** - AI video creation with digital avatars
+<div class="resources-grid">
+<div class="resource-card">
 
-### Automation Platforms
-- **n8n** - Open-source workflow automation (Zapier alternative)
-- **Make** - Visual automation platform for integrations
-- **Zapier** - Enterprise automation and integration platform
-- **IFTTT** - Simple automation for web services
+### ChatGPT
+Conversational AI for writing, brainstorming, and learning. Perfect for content generation and problem-solving.
 
-### Business Intelligence
-- **ChatGPT Analytics** - Data analysis with conversational AI
-- **Google Analytics AI** - Machine learning insights
-- **Tableau AI** - Smart data visualization and insights
-- **Looker AI** - Business intelligence with AI
+<a href="https://chat.openai.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
 
-### Design & Prototyping
-- **Figma AI** - Design collaboration with AI assistance
-- **Adobe XD with AI** - Prototyping with generative features
-- **Framer** - Web design with AI suggestions
-- **TeleportHQ** - AI-powered design to code
+<div class="resource-card">
 
-### Customer Service
-- **Intercom AI** - Customer communication with AI
-- **Zendesk AI** - Automated customer support
-- **HubSpot Service Hub AI** - CRM with AI automation
-- **Drift** - Conversational AI for sales
+### Notion AI
+AI-powered knowledge management and task organization. Enhance your notes and wikis with AI assistance.
 
-### Marketing & Analytics
-- **HubSpot AI Hub** - Marketing automation with AI
-- **Jasper** - AI copywriting for marketing
-- **Copy.ai** - Quick AI content generation
-- **Semrush AI** - SEO and content insights
+<a href="https://notion.so" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
 
-### Data & Analytics
-- **PowerBI** - Business intelligence with AI
-- **Databricks** - Data platform with AI/ML
-- **DataRobot** - Automated machine learning
-- **H2O.ai** - Open-source AI platform
+<div class="resource-card">
 
----
+### Grammarly
+Advanced writing enhancement and clarity improvement. Real-time grammar, style, and tone suggestions.
 
-## Getting Started
+<a href="https://grammarly.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
 
-### For Beginners
-1. Start with **ChatGPT** or **Claude** for learning
-2. Try **Notion AI** for productivity
-3. Explore **Midjourney** for creative projects
+<div class="resource-card">
 
-### For Developers
-1. **GitHub Copilot** for code assistance
-2. **n8n** for workflow automation
-3. **Cursor** editor for enhanced development
+### Claude
+Advanced AI assistant for complex reasoning tasks. Excellent for analysis, coding, and detailed explanations.
 
-### For Content Creators
-1. **Midjourney** or **Adobe Firefly** for images
-2. **Runway Gen-2** for video content
-3. **Jasper** for written content
+<a href="https://claude.ai" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+</div>
 
-### For Businesses
-1. **Make** for process automation
-2. **HubSpot AI Hub** for marketing/sales
-3. **Zendesk AI** for customer support
+</div>
 
----
+<div class="resources-section">
 
-## Free vs Paid
+## 💻 Coding & Development
 
-### Completely Free
-- Claude (limited)
-- Copilot (Microsoft products)
-- Google's AI tools
-- Open-source: n8n, Open WebUI
+<div class="resources-grid">
+<div class="resource-card">
 
-### Free Tier Available
-- ChatGPT
+### GitHub Copilot
+AI pair programming assistant that suggests code as you type. Supports multiple languages and frameworks.
+
+<a href="https://github.com/features/copilot" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Cursor
+AI-powered code editor based on VSCode. Built-in AI chat and code generation for faster development.
+
+<a href="https://cursor.sh" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Tabnine
+AI code completion engine. Works across IDEs with privacy-focused AI assistance.
+
+<a href="https://tabnine.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### CodeWhisperer
+Amazon's AI code generator with built-in security scanning. Free for individual developers.
+
+<a href="https://aws.amazon.com/codewhisperer/" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+</div>
+
+</div>
+
+<div class="resources-section">
+
+## 🎨 Content Creation
+
+<div class="resources-grid">
+<div class="resource-card">
+
+### Midjourney
+AI image generation from text prompts. Create stunning artwork and visuals with natural language.
+
+<a href="https://midjourney.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Runway Gen-2
+AI video generation and editing. Transform text and images into video content effortlessly.
+
+<a href="https://runwayml.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Adobe Firefly
+Generative AI for creative professionals. Integrated into Adobe Creative Cloud applications.
+
+<a href="https://firefly.adobe.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Synthesia
+AI video creation with digital avatars. Generate professional videos without cameras or studios.
+
+<a href="https://synthesia.io" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+</div>
+
+</div>
+
+<div class="resources-section">
+
+## ⚡ Automation Platforms
+
+<div class="resources-grid">
+<div class="resource-card">
+
+### n8n
+Open-source workflow automation platform. Self-hostable alternative to Zapier with powerful integrations.
+
+<a href="https://n8n.io" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Make
+Visual automation platform for integrations. Connect apps and automate workflows with ease.
+
+<a href="https://make.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Zapier
+Enterprise automation and integration platform. Trusted by millions for workflow automation.
+
+<a href="https://zapier.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### IFTTT
+Simple automation for web services and smart home devices. Create applets in minutes.
+
+<a href="https://ifttt.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+</div>
+
+</div>
+
+<div class="resources-section">
+
+## 📊 Business Intelligence & Analytics
+
+<div class="resources-grid">
+<div class="resource-card">
+
+### PowerBI
+Microsoft's business intelligence platform with AI-powered insights and data visualization.
+
+<a href="https://powerbi.microsoft.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Tableau
+Smart data visualization and business intelligence. Industry-leading analytics platform.
+
+<a href="https://tableau.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### Databricks
+Unified data platform with AI/ML capabilities. Built on Apache Spark for big data processing.
+
+<a href="https://databricks.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+
+<div class="resource-card">
+
+### DataRobot
+Automated machine learning platform. Build and deploy AI models without deep ML expertise.
+
+<a href="https://datarobot.com" target="_blank" rel="noopener">Visit Tool →</a>
+</div>
+</div>
+
+</div>
+
+<div class="resources-callout">
+  <h2>🎯 Getting Started with AI Tools</h2>
+  
+  <div class="getting-started-grid">
+    <div class="start-card">
+      <h3>For Beginners</h3>
+      <ol>
+        <li>Start with <strong>ChatGPT</strong> or <strong>Claude</strong> for learning</li>
+        <li>Try <strong>Notion AI</strong> for productivity</li>
+        <li>Explore <strong>Midjourney</strong> for creative projects</li>
+      </ol>
+    </div>
+    
+    <div class="start-card">
+      <h3>For Developers</h3>
+      <ol>
+        <li><strong>GitHub Copilot</strong> for code assistance</li>
+        <li><strong>n8n</strong> for workflow automation</li>
+        <li><strong>Cursor</strong> editor for enhanced development</li>
+      </ol>
+    </div>
+    
+    <div class="start-card">
+      <h3>For Content Creators</h3>
+      <ol>
+        <li><strong>Midjourney</strong> or <strong>Adobe Firefly</strong> for images</li>
+        <li><strong>Runway Gen-2</strong> for video content</li>
+        <li><strong>ChatGPT</strong> for written content</li>
+      </ol>
+    </div>
+    
+    <div class="start-card">
+      <h3>For Businesses</h3>
+      <ol>
+        <li><strong>Make</strong> for process automation</li>
+        <li><strong>PowerBI</strong> for data insights</li>
+        <li><strong>Zapier</strong> for workflow integration</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="resources-footer">
+  <p><strong>Note:</strong> Most tools offer free tiers or trials. Start experimenting to find what works best for your needs!</p>
+</div>
 - Notion AI
 - Midjourney (limited credits)
 - Cursor editor
